@@ -1,0 +1,552 @@
+
+/* ========================================
+   O'LUMI HERO SECTION
+======================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #f7f4ee;
+  color: #263d32;
+}
+
+/* ========================================
+   BACKGROUND DECORATION
+======================================== */
+
+.hero-circle {
+  position: absolute;
+  right: -130px;
+  top: 80px;
+  border: 1px solid rgba(38, 61, 50, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-circle-one {
+  width: 500px;
+  height: 500px;
+}
+
+.hero-circle-two {
+  width: 350px;
+  height: 350px;
+  right: -55px;
+  top: 155px;
+}
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: min(1200px, calc(100% - 80px));
+  min-height: 760px;
+  margin: auto;
+  padding: 80px 0 85px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 64px;
+}
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Eyebrow */
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 35px;
+}
+
+.hero-eyebrow span {
+  width: 40px;
+  height: 1px;
+  background: #263d32;
+}
+
+.hero-eyebrow p {
+  color: #263d32;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* Main heading */
+
+.hero-heading-wrapper {
+  overflow: hidden;
+}
+
+.hero-heading {
+  font-family: var(--font-cormorant), Georgia, serif;
+  color: #263d32;
+  font-size: clamp(76px, 9vw, 132px);
+  font-weight: 400;
+  line-height: 0.83;
+  letter-spacing: -4px;
+}
+
+.hero-heading span {
+  color: #a5b39c;
+  font-style: italic;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 390px;
+  margin-top: 40px;
+  color: #777d72;
+  font-size: 13px;
+  line-height: 2.2;
+  letter-spacing: 0.2px;
+}
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.hero-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 17px 25px;
+
+  background: #263d32;
+  color: #fffefa;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.hero-primary-button:hover {
+  background: #a5b39c;
+  color: #263d32;
+  transform: translateY(-4px);
+}
+
+.hero-button-icon {
+  transition: transform 0.3s ease;
+}
+
+.hero-primary-button:hover .hero-button-icon {
+  transform: translate(3px, -3px);
+}
+
+.hero-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #263d32;
+  font-size: 12px;
+}
+
+.hero-secondary-link span {
+  width: 25px;
+  height: 1px;
+  background: #263d32;
+  transition: width 0.3s ease;
+}
+
+.hero-secondary-link:hover span {
+  width: 42px;
+}
+
+/* ========================================
+   BOTTOM DETAILS
+======================================== */
+
+.hero-details {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 65px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(38, 61, 50, 0.15);
+}
+
+.hero-detail-number {
+  font-family: var(--font-cormorant), Georgia, serif;
+  color: #263d32;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.hero-detail-label {
+  margin-top: 6px;
+  color: #777d72;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   RIGHT IMAGE
+======================================== */
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  margin-left: auto;
+}
+
+.hero-image-area {
+  position: relative;
+}
+
+/* Image frame */
+
+.hero-image-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #d9dfd1;
+}
+
+.hero-main-image {
+  object-fit: cover;
+  transition: transform 2s ease;
+}
+
+.hero-image-frame:hover .hero-main-image {
+  transform: scale(1.05);
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(38, 61, 50, 0.3),
+    transparent 45%
+  );
+}
+
+/* Image caption */
+
+.hero-image-caption {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  z-index: 2;
+  color: white;
+}
+
+.hero-image-caption p {
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.hero-image-caption span {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 36px;
+  font-style: italic;
+}
+
+/* ========================================
+   FLOATING CIRCLE
+======================================== */
+
+.hero-floating-circle {
+  position: absolute;
+  top: 45px;
+  left: -48px;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 125px;
+  height: 125px;
+
+  border: 1px solid rgba(38, 61, 50, 0.3);
+  border-radius: 50%;
+  background: #f7f4ee;
+}
+
+.hero-floating-circle > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #263d32;
+}
+
+.hero-floating-circle span {
+  margin-top: 8px;
+  font-size: 8px;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   FLOATING NOTE
+======================================== */
+
+.hero-floating-note {
+  position: absolute;
+  top: 55%;
+  right: -45px;
+  z-index: 3;
+
+  width: 175px;
+  padding: 20px;
+
+  background: #fffefa;
+  border: 1px solid rgba(38, 61, 50, 0.1);
+  box-shadow: 0 15px 40px rgba(38, 61, 50, 0.1);
+}
+
+.hero-floating-note p {
+  color: #a5a99d;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.hero-floating-note span {
+  display: block;
+  margin-top: 10px;
+  color: #263d32;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.hero-floating-note div {
+  width: 30px;
+  height: 1px;
+  margin-top: 15px;
+  background: #263d32;
+}
+
+/* ========================================
+   VERTICAL TEXT
+======================================== */
+
+.hero-vertical-text {
+  position: absolute;
+  top: 40px;
+  right: -32px;
+
+  color: #263d32;
+  font-size: 9px;
+  letter-spacing: 4px;
+  writing-mode: vertical-rl;
+}
+
+/* ========================================
+   SCROLL BAR
+======================================== */
+
+.hero-scroll-bar {
+  width: min(1200px, calc(100% - 80px));
+  margin: auto;
+  padding: 22px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(38, 61, 50, 0.15);
+  color: #263d32;
+}
+
+.hero-scroll-bar > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.hero-scroll-caption {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 1024px) {
+  .hero-container {
+    gap: 40px;
+    min-height: 680px;
+  }
+
+  .hero-heading {
+    font-size: clamp(75px, 9vw, 105px);
+  }
+
+  .hero-floating-note {
+    right: -15px;
+  }
+
+  .hero-vertical-text {
+    display: none;
+  }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .hero-container {
+    width: calc(100% - 36px);
+    min-height: auto;
+    padding: 75px 0 65px;
+
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .hero-heading {
+    font-size: clamp(76px, 14vw, 105px);
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    margin-top: 30px;
+  }
+
+  .hero-details {
+    margin-top: 45px;
+  }
+
+  .hero-visual {
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-floating-circle {
+    left: -25px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-floating-note {
+    right: -20px;
+    width: 145px;
+    padding: 15px;
+  }
+
+  .hero-image-caption span {
+    font-size: 30px;
+  }
+
+  .hero-scroll-bar {
+    width: calc(100% - 36px);
+  }
+
+  .hero-scroll-caption {
+    display: none;
+  }
+
+  .hero-circle-one {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-circle-two {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .hero-container {
+    width: calc(100% - 32px);
+    padding-top: 60px;
+    gap: 45px;
+  }
+
+  .hero-eyebrow p {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .hero-heading {
+    font-size: clamp(65px, 15vw, 82px);
+    letter-spacing: -2px;
+  }
+
+  .hero-actions {
+    gap: 18px;
+  }
+
+  .hero-primary-button {
+    padding: 15px 17px;
+    font-size: 9px;
+  }
+
+  .hero-secondary-link {
+    font-size: 11px;
+  }
+
+  .hero-details {
+    gap: 30px;
+  }
+
+  .hero-visual {
+    width: 88%;
+  }
+
+  .hero-floating-circle {
+    left: -18px;
+    top: 25px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .hero-floating-circle span {
+    font-size: 7px;
+  }
+
+  .hero-floating-note {
+    right: -18px;
+    width: 125px;
+    padding: 12px;
+  }
+
+  .hero-floating-note span {
+    font-size: 18px;
+  }
+}
