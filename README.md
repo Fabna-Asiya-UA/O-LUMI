@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# O'LUMI ✨
+### Beauty in Every Ritual.
 
-## Getting Started
+O'LUMI is a modern skincare e-commerce website designed to make discovering skincare products feel simple, elegant, and enjoyable.
 
-First, run the development server:
+The project features a premium shopping experience with a clean interface, thoughtfully organized product collections, skincare categories, and a nature-inspired brand identity.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 **Live Website:** https://o-lumi.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 **GitHub Repository:** https://github.com/Fabna-Asiya-UA/O-LUMI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Premium Landing Page** – Elegant homepage with a modern skincare-focused design.
+- **Product Collection** – Explore a curated collection of skincare products.
+- **Category Filtering** – Browse products by category, including:
+  - Cleansers
+  - Serums
+  - Moisturizers
+  - Sun Care
+  - Face Masks
+  - Exfoliators
+  - Eye Care
+  - Lip Care
+- **Product Details** – View product names, prices, sizes, and suitable skin types.
+- **Shopping Bag UI** – Add products to the shopping bag.
+- **Wishlist UI** – A dedicated wishlist experience.
+- **Ingredients Section** – Discover skincare ingredients and their benefits.
+- **Brand Story** – Learn about the O'LUMI skincare philosophy.
+- **Customer Testimonials** – A dedicated section for customer experiences.
+- **Newsletter Section** – Email subscription interface.
+- **Responsive Design** – Designed for a smooth experience across different screen sizes.
+- **Smooth Animations** – Motion-based visual interactions and transitions.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework |
+| React.js | UI development |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling and responsive layouts |
+| Motion | Animations and transitions |
+| Lucide React | Icon library |
+| React Icons | Additional icons |
+| Vercel | Deployment |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Project Objective
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The objective of O'LUMI is to create a visually appealing and user-friendly skincare shopping experience that combines modern web technologies with elegant design.
+
+This project focuses on improving frontend development skills, reusable component architecture, responsive UI design, and interactive shopping interfaces.
+
